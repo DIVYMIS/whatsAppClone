@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>WhatsApp</title>
+    <link rel="stylesheet" href="whatsapp.css">
+    <link rel="icon" href="WhatsApp.svg.webp" type="image/x-icon">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:wght@700&family=Ubuntu&family=VT323&display=swap');
+    </style>
+    
+    <script defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+    <script defer src="whatsapp.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</head>
+<body>
+    <div id="background">
+        <div id="navbar">
+            <div id="navbardp"></div>
+            <div id="navbargrp">
+                <div id="navbargrpname">Find Amigos</div>
+                <div id="navbargrpparticipants">Divyansh</div>
+            </div>
+            <div id="navbarsearch">
+                <form action="#">
+                    <input type="text" id="navsearchbox" placeholder="Search Chats and Messages">
+                </form>
+                <button id="searchnavicon">
+                <ion-icon name="search-outline"></ion-icon>
+                </button>
+            </div>
+            <div id="navbarmenu">
+                <ion-icon name="ellipsis-vertical-outline"></ion-icon>
+                <div id="navbarmenudrop">
+                    <div id="exitgrp" class="navbarmenudropele">Exit group</div>
+                    <div id="changegrpname" class="navbarmenudropele">Edit group name</div>
+                </div>
+            </div>
+        </div>
+        <div class="chatcontainer">
+            <div class="message right">Divyansh: Hey how are you?</div>
+            <div class="message left">Rohan: Bhai I am fine. How about you?</div>
+        </div>
+        <div class="send">
+            <form action="#" id="send-container">
+                <input type="text" name="messageInp" id="messageInp" placeholder="Type a message">
+                <button class="btn" type="submit">Send</button>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
